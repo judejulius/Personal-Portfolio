@@ -1,0 +1,52 @@
+body{
+    font-family: comfortaa;
+    color: white;
+    
+}
+
+.s1{
+background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/images/Background/cosmos-1853491_1920.jpg)!important;
+ background-size: contain;
+    
+}
+.s1 h1{
+    
+    color: aliceblue;
+    font-size: 10rem;
+    text-align: center;
+}
+section{
+    background-color:#2F2D2E ;
+}
+span{
+    background-color: white !important;
+}
+.s2{
+background-color: aqua;
+}
+.s2 .intro{
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    width: 50%;
+    padding: 0 3em;
+    font-size: 3rem;
+}
+.s3{
+    background-color: aqua;
+}
+.s4{
+    background-color: aqua;
+}
+.skills-1 h3{
+    color: black;
+    text-align: center;
+}
+
+.dark-mode {
+    background-color: whitesmoke;
+    color: black;
+  }
+.bi:hover{
+    color: blue;
+}
