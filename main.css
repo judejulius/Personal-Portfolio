@@ -50,3 +50,6 @@ background-color: aqua;
 .bi:hover{
     color: blue;
 }
+.navbar-light .navbar-toggler-icon{
+    font-size: 3em;
+}

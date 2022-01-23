@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Joud Portfolio</title>
+    <!-- vue.js -->
+    <script src="https://unpkg.com/vue@3.0.2"></script>
     <!-- animation -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- icons -->
@@ -16,16 +18,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;700&display=swap" rel="stylesheet">
     <!-- css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="/resources/css/fullpage.css">
     <link rel="stylesheet" href="/resources/css/webslides.css">
     <link rel="stylesheet" href="/main.css">
 </head>
 <body>
-    
+    <div id="app"></div>
+  
     <div id="fullpage">
 
-      <!-- Home -->
-        <div class="section s1">
+      <!-- Home --> 
+        <div class="section s1" id="home">
             <h1 >Joud Portfolio</h1>
             <p class="text-symbols" style="text-align: center;padding-top: 50px;">
                 <a target="_blank" href="tel:0813808892"><i class="bi-1 bi-whatsapp p-2" style="font-size: 50px; color: white;padding-left:10px"></a></i>
@@ -38,7 +42,7 @@
         </div>
 
         <!-- About -->
-        <div class="section s2">
+        <div class="section s2" id="about\\">
             <div class="wrap">
                 <h1 class="skills aligncenter"><strong>ABOUT</strong></h1>
               <div class="card-50">
@@ -58,7 +62,7 @@
         </div>
 
         <!-- Skills -->
-        <div class="section s3"> <div class="wrap">
+        <div class="section s3" id="skills"> <div class="wrap">
             <h1 class="skills aligncenter"><strong>SKILLS</strong></h1>
             <ul class="flexblock skills-1 features bg-trans-dark fadeInUp">
               <li>
@@ -102,7 +106,8 @@
          </div>
 
          <!-- Projects -->
-        <div class="section s4">
+        <div class="section s4" id="projects">
+          <div class="slide">
           <div class="wrap" > 
             <h1 class="project aligncenter" style="padding-top: 100px;"><strong>PROJECTS</strong></h1>
             <ul class="flexblock gallery">
@@ -168,9 +173,78 @@
               </li>
             </ul>
           </div>
+        </div>
+        <div class="slide">
+          <div class="wrap" > 
+            <h1 style="text-align: center;">More Projects</h1>
+          <ul class="flexblock gallery">
+          <li>
+            <a href="#">
+              <figure>
+                <img src="/images/Projects/ecommerce.jpeg" alt="">
+                <figcaption>
+                  <h2 class="aligncenter">Ecommerce</h2>
+                  <p>Ecommerce store using HTML, CSS, Bootstrap,JAVASCRIPT and Vuejs properties</p>
+                  <p style="padding-top: 30px;">
+                    <a target="_blank" href="https://github.com/judejulius/ecommerce"><i class="fab fa-github" style="font-size: 60px;"></i></a>
+                    <a target="_blank" href="https://vibrant-jepsen-73a6a4.netlify.app"><span class="iconify" data-icon="logos:netlify" style="float: right; font-size: 60px;"></span></a>
+                  </p>
+                </figcaption>
+              </figure>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <figure>
+                <img src="/images/Projects/temperature-converter.jpeg" alt="">
+                <figcaption>
+                  <h2 class="aligncenter">Temperature Converter</h2>
+                  <p>Temperature converter using HTML5,CSS3,BootStrap and JAVASCRIPT properties</p>
+                  <p style="padding-top: 30px;">
+                    <a target="_blank" href="https://github.com/judejulius/Temperature_converter"><i class="fab fa-github" style="font-size: 60px;"></i></a>
+                    <a target="_blank" href="https://romantic-nobel-8967c5.netlify.app"><span class="iconify" data-icon="logos:netlify" style="float: right; font-size: 60px;"></span></a>
+                  </p>
+                </figcaption>
+              </figure>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <figure>
+                <img src="/images/Projects/stopwatch.jpeg" alt="">
+                <figcaption>
+                  <h2 class="aligncenter">Stopwatch</h2>
+                  <p>Stopwatch using JAVASCRIPT</p>
+                  <p style="padding-top: 30px;">
+                    <a target="_blank" href="https://github.com/judejulius/Stop-watch"><i class="fab fa-github" style="font-size: 60px;"></i></a>
+                    <a target="_blank" href="https://affectionate-mahavira-9e2422.netlify.app"><span class="iconify" data-icon="logos:netlify" style="float: right; font-size: 60px;"></span></a>
+                  </p>
+                </figcaption>
+              </figure>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <figure>
+                <img src="/images/Projects/bmi.jpeg" alt="">
+                <figcaption>
+                  <h2 class="aligncenter">Bmi Converter</h2>
+                  <p>Calculator using HTML, CSS, Bootstrap and JAVASCRIPT properties</p>
+                  <p style="padding-top: 60px;">
+                    <a target="_blank" href="https://github.com/judejulius/BMI-Calculator"><i class="fab fa-github" style="font-size: 60px;"></i></a>
+                    <a target="_blank" href="https://confident-raman-666767.netlify.app"><span class="iconify" data-icon="logos:netlify" style="float: right; font-size: 60px;"></span></a>
+                  </p>
+                </figcaption>
+              </figure>
+            </a>
+          </li>
+          </ul>
+          </div>
+        </div>
+
     </div>
     <!-- Testimonial -->
-    <div class="section">
+    <div class="section" id="testimonial">
      <!-- slide 1 -->
     <div class="slide">
       <div class="card-50">
@@ -185,6 +259,8 @@
     </div>
 
     </div>
+    <!-- Contact -->
+    <div class="section" id="contacts"></div>
     </div>
 
 
@@ -196,6 +272,8 @@
       AOS.init();
     </script>
     <!-- main.js -->
+    <script src="/resources/js/NavBar.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 <script src="/resources/js/webslides.js"></script>
 <script src="/"></script>
 <script src="/resources/js/fullpage.js"></script>
@@ -214,7 +292,7 @@
           "section6",
           "section7",
         ],
-            navigationTooltips:['Home','About','Skills','Projects','Testimonial'],
+            navigationTooltips:['Home','About','Skills','Projects','Testimonial','Contact'],
             showActiveTooltip:true,
             controlArrows:false,
             slidesNavigation:true,
